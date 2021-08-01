@@ -1,1 +1,1 @@
-# Nuxt.js prohect study
+# Nuxt.js project study
