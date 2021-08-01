@@ -2,22 +2,19 @@
   {
     "name": "profile",
     "path": "/profile",
-    "component": "/Users/yongsukwon/Documents/DevFrog92/Node-Nuxt/front/pages/profile.vue",
-    "chunkName": "pages/profile",
-    "_name": "_08b2cbb0"
+    "component": "/Users/yongsukwon/Documents/DevFrog92/nuxt-vue/front/pages/profile.vue",
+    "chunkName": "pages/profile"
   },
   {
     "name": "signup",
     "path": "/signup",
-    "component": "/Users/yongsukwon/Documents/DevFrog92/Node-Nuxt/front/pages/signup.vue",
-    "chunkName": "pages/signup",
-    "_name": "_2d75d72e"
+    "component": "/Users/yongsukwon/Documents/DevFrog92/nuxt-vue/front/pages/signup.vue",
+    "chunkName": "pages/signup"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/yongsukwon/Documents/DevFrog92/Node-Nuxt/front/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_d3822ade"
+    "component": "/Users/yongsukwon/Documents/DevFrog92/nuxt-vue/front/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]
