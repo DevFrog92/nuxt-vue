@@ -88,9 +88,34 @@
       };
     },
     methods: {
-      onSubmitForm() {
+      // onSubmitForm() {
+      //   if (this.$refs.form.validate()) {
+      //     alert('회원가입 시도!');
+      //     this.$store.dispatch('users/signUp',{
+      //       email: this.email,
+      //       nickName: this.nickname
+      //     })
+      //     .then(()=>{
+      //       this.$router.push({path:'/'})
+      //     })
+      //     .catch(()=>{
+      //       alert('회원가입 실패')
+      //     })
+      //   } else {
+      //     alert('폼이 유효하지 않습니다.');
+      //   }
+      // },
+      async onSubmitForm() {
         if (this.$refs.form.validate()) {
-          alert('회원가입 시도!');
+          try {
+            const response = await this.$store.dispatch('users/signUp',{
+              email: this.email,
+              nickName: this.nickname
+            })
+          } catch (error) {
+            throw new Error(error)
+          }          
+          
         } else {
           alert('폼이 유효하지 않습니다.');
         }

@@ -4,9 +4,15 @@
       <v-card style="margin-bottom: 20px">
         <v-container>
           <v-subheader>내 프로필</v-subheader>
-          <v-form>
+          <v-form
+            ref="form"
+            v-model="valid"
+            @submit.prevent="onSubmitForm"
+          >
             <v-text-field
+              v-model="nickName"
               label="닉네임"
+              :rules="nickNameRules"
               required
             />
             <v-btn
@@ -27,7 +33,7 @@
       <v-card style="margin-bottom: 20px">
         <v-container>
           <v-subheader>팔로워</v-subheader>
-          <FolowList />
+          <FollowList />
         </v-container>
       </v-card>
     </v-container>
@@ -42,7 +48,9 @@
     },
     data() {
       return {
-        name: 'Nuxt.js',
+        valid:false,
+        nickName:'',
+        nickNameRules:[v=>!!v || 'type nickName'],
       };
     },
     head() {
@@ -50,6 +58,15 @@
         title: '프로필',
       };
     },
+    methods:{
+      onSubmitForm(){
+        if(this.$refs.form.validate()){
+          this.$store.dispatch('users/editUserNickName',{
+            nickName:this.nickName
+          })
+        }
+      }
+    }
   };
 </script>
 
