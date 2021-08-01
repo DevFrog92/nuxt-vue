@@ -1,22 +1,27 @@
 <template>
-  <div>
-    <div>Main page</div>
-  </div>  
+  <v-container>
+    <div>
+      <post-card />
+      <post-card />
+      <post-card />
+      <post-card />
+      <post-card />
+    </div>
+  </v-container>
 </template>
 
 <script>
-export default {
-  data(){
-    return {
-      name : 'Nuxt.js',
-    }
-  },
-
-
-
-}
+  import PostCard from '~/components/PostCard';
+  export default {
+    components: {
+      PostCard,
+    },
+    data() {
+      return {
+      }
+    },
+  }
 </script>
 
 <style>
-
 </style>
