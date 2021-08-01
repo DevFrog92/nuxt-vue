@@ -46,6 +46,7 @@
     components: {
       FollowList,
     },
+    middleware:'anonymous',
     data() {
       return {
         valid:false,
