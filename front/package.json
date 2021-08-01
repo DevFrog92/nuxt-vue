@@ -1,0 +1,15 @@
+{
+  "name": "vue-nodebird-font",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ivue": "0.0.33",
+    "nuxt": "^2.15.7"
+  }
+}
