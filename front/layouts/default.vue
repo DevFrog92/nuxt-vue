@@ -37,6 +37,10 @@
         </v-toolbar-items>
       </v-toolbar>
     </nav>
+    <div>{{ name }}</div>
+    <v-btn @click="onChangeName">
+      bye
+    </v-btn>
     <v-row no-gutters>
       <v-col
         cols="12"
@@ -67,6 +71,17 @@
         title: 'NodeBird',
       };
     },
+    computed:{
+      name(){
+        return this.$store.state.posts.name
+      }
+    },
+    methods:{
+      onChangeName(){
+        this.$store.commit('posts/BYE')
+        console.log(this.$store.state.hello)
+      }
+    }
   };
 </script>
 
