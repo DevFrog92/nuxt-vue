@@ -14,6 +14,13 @@
     "_name": "_fa4a6ca6"
   },
   {
+    "name": "post-id",
+    "path": "/post/:id?",
+    "component": "/Users/yongsukwon/Documents/DevFrog92/nuxt-vue/front/pages/post/_id.vue",
+    "chunkName": "pages/post/_id",
+    "_name": "_035653a0"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/yongsukwon/Documents/DevFrog92/nuxt-vue/front/pages/index.vue",
